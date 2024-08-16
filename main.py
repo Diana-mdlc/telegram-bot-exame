@@ -114,7 +114,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         [InlineKeyboardButton("Opción I", callback_data='1')],
         [InlineKeyboardButton("Opción II", callback_data='2')],
         [InlineKeyboardButton("Opción III", callback_data='3')],
-        [InlineKeyboardButton("API Clima", callback_data='4')],
+        [InlineKeyboardButton("API Quotes", callback_data='4')],
         [InlineKeyboardButton("Opción V", callback_data='5')],
         [InlineKeyboardButton("Opción VI", callback_data='6')]
     ]
