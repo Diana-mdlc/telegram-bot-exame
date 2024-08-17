@@ -116,7 +116,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         [InlineKeyboardButton("Opción III", callback_data='3')],
         [InlineKeyboardButton("API Quotes", callback_data='4')],
         [InlineKeyboardButton("Opción V", callback_data='5')],
-        [InlineKeyboardButton("Opción VI", callback_data='6')]
+        
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
     await context.bot.send_message(chat_id=chat_id, text="Por favor, elige una opción:", reply_markup=reply_markup)
@@ -511,7 +511,7 @@ def main() -> None:
     """Start the bot."""
     application = Application.builder().token(TOKEN).build()
 
-    application.add_handler(CommandHandler("start", start))
+    application.add_handler(CommandHandler("inicio", start))
     application.add_handler(CallbackQueryHandler(button))
   
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
