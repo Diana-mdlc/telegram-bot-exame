@@ -518,7 +518,7 @@ def main() -> None:
 
     # CallbackQuery handlers
     application.add_handler(CallbackQueryHandler(button))
-    application.add_handler(CallbackQueryHandler(handle_answer, pattern='^trivia_'))
+   
 
     application.run_polling()
 
